@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  network-api:
+    build: .
+    container_name: network_api_container
+    ports:
+      - "5000:5000"
+    restart: always
+    environment:
+      - FLASK_ENV=production

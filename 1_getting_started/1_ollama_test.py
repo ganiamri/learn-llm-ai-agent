@@ -5,7 +5,7 @@ import json
 def query_ollama(prompt):
     url = "http://localhost:11434/api/generate"
     data = {
-        "model": "gemma3:270m",
+        "model": "gemma3:270m-messi",
         "prompt": prompt
     }
     headers = {'Content-Type': 'application/json'}
